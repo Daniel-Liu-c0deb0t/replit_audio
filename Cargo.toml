@@ -1,0 +1,9 @@
+[package]
+name = "replit_audio"
+version = "0.1.0"
+authors = ["c0deb0t <daniel.liu02@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+json = "0.12.4"
+lazy_static = "1.4.0"
