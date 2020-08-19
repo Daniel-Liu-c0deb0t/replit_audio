@@ -100,7 +100,7 @@ impl AudioBuilder {
         self
     }
 
-    pub fn build(self) -> AudioResult<Audio> {
+    pub fn build(&self) -> AudioResult<Audio> {
         let serialized_args = match self.audio_type {
             AudioType::File { ref path, .. } => object! {
                 Path: path.as_str()
@@ -133,7 +133,7 @@ impl AudioBuilder {
 
                 while start_time.elapsed() <= time_out {
                     if let Ok(status) = get_status_by_name(&self.name) {
-                        return Ok(Audio { id: status["ID"].as_u64().unwrap(), audio_type: self.audio_type });
+                        return Ok(Audio { id: status["ID"].as_u64().unwrap(), audio_type: self.audio_type.clone() });
                     }
                 }
 
@@ -260,7 +260,7 @@ impl error::Error for AudioError {
 #[derive(Debug, PartialEq, Clone)]
 pub enum AudioType {
     File { file: FileType, path: String },
-    Tone { tone: ToneType, pitch: u64, duration: u64 }
+    Tone { tone: ToneType, pitch: f64, duration: f64 }
 }
 
 impl AudioType {
