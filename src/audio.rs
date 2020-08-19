@@ -137,7 +137,7 @@ impl AudioBuilder {
                     }
                 }
 
-                Err(AudioError::new(format!("Timed out while waiting for {} to update.", AUDIO_UPDATE_PATH)))
+                Err(AudioError::new(format!("Timed out while waiting for {} to update.", AUDIO_STATUS_PATH)))
             },
             Err(e) => Err(AudioError::new(format!("Error in writing to {}. ({})", AUDIO_UPDATE_PATH, e.to_string())))
         }

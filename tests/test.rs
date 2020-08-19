@@ -1,6 +1,11 @@
 use replit_audio::*;
 
 #[test]
+fn test() {
+    test_play_tone();
+    test_play_audio_file();
+}
+
 fn test_play_audio_file() {
     let audio = AudioBuilder::new(&AudioType::File { file: FileType::Wav, path: "audio.wav".to_string() })
         .volume(1.0)
@@ -21,7 +26,6 @@ fn test_play_audio_file() {
     assert_eq!(replit_audio::is_running().unwrap(), true);
 }
 
-#[test]
 fn test_play_tone() {
     let audio = AudioBuilder::new(&AudioType::Tone { tone: ToneType::Square, pitch: 440.0, duration: 2.0 })
         .build()
