@@ -29,10 +29,10 @@ pub struct Audio {
 }
 
 pub struct AudioUpdate {
-    volume: f64,
-    paused: bool,
-    does_loop: bool,
-    loop_count: i64
+    pub volume: f64,
+    pub paused: bool,
+    pub does_loop: bool,
+    pub loop_count: i64
 }
 
 fn parse_status() -> AudioResult<json::JsonValue> {
