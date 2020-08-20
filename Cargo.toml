@@ -7,7 +7,7 @@ description = "Rust library for playing audio in repl.it."
 repository = "https://github.com/Daniel-Liu-c0deb0t/replit_audio"
 readme = "README.md"
 documentation = "https://docs.rs/replit_audio"
-keywords = ["repl.it", "audio", "music", "library"]
+keywords = ["replit", "audio", "music", "library"]
 categories = ["api-bindings", "multimedia::audio"]
 edition = "2018"
 
