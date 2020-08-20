@@ -4,9 +4,9 @@ Rust library for playing audio in [repl.it](https://repl.it/).
 ## Usage
 Add
 ```
-
+replit_audio = "0.1.0"
 ```
-to your `Cargo.toml` file.
+to your `Cargo.toml` file. This crate is available on [crates.io]().
 
 You can view an example on [repl.it]().
 

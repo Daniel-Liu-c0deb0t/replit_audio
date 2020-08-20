@@ -5,8 +5,11 @@ use std::time::Duration;
 
 #[test]
 fn test() {
+    // this test should be conducted on repl.it
+    // first, play a tone, then turn down the volume halfway through
     test_play_tone();
     thread::sleep(Duration::from_secs(2));
+    // finally, play 30 seconds of the mysterious audio file
     test_play_audio_file();
     thread::sleep(Duration::from_secs(30));
 }
