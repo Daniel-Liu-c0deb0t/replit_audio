@@ -2,6 +2,13 @@
 name = "replit_audio"
 version = "0.1.0"
 authors = ["c0deb0t <daniel.liu02@gmail.com>"]
+license = "MIT"
+description = "Rust library for playing audio in repl.it."
+repository = "https://github.com/Daniel-Liu-c0deb0t/replit_audio"
+readme = "README.md"
+documentation = "https://docs.rs/replit_audio"
+keywords = ["repl.it", "audio", "music", "library"]
+categories = ["api-bindings", "multimedia::audio"]
 edition = "2018"
 
 [dependencies]

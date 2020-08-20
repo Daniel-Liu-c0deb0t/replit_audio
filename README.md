@@ -6,9 +6,12 @@ Add
 ```
 replit_audio = "0.1.0"
 ```
-to your `Cargo.toml` file. This crate is available on [crates.io]().
+to your `Cargo.toml` file. This crate is available on [crates.io](https://crates.io/crates/replit_audio).
 
-You can view an example on [repl.it]().
+Documentation is available on [docs.rs](https://docs.rs/replit_audio).
+
+You can view an example on [repl.it](https://repl.it/@daniel_school/replitaudiodemo).
+Tests should be ran on [repl.it](https://repl.it/).
 
 To play an audio file, create an `Audio` instance using the `AudioBuilder`:
 ```Rust
